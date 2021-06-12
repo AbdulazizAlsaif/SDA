@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="./css/style.css"/>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/gif" href="./assets/img/logo.png" />
+  <title>Simply Blogging</title>
+</head>
+<body class="bg-light">
+
+<div class="wrap">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="./assets/img/logo.png" alt="logo" srcset="" width="50" height="40"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav ">
+
+        <li class="nav-item ">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#about-us">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#contact-us">Contact</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Add Blog</a>
+        </li>
+    
+       
+      </ul> 
+    </div>
+  </div>
+  </nav>
+
+  
+
+  <header class='page-header bg-light '>
+    <div class='container'>
+      <div class='row justify-content-center'>
+        <div class="col-md-12">
+
+          <h5 class="font-weight-bold text-left title" >Add Blog</h5>
+
+        </div>
+        <form class="col-sm-12 col-md-6">
+          <div class="form-group">
+            <label for="title">Title*</label>
+            <input type="text" class="form-control" id="title" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="author">Author*</label>
+            <input type="text" class="form-control" id="author" placeholder="">
+          </div>
+       
+          <div class="form-group">
+            <label  for="Article">Article*</label>
+            <textarea class="form-control" id="article" rows="3"></textarea>
+          </div>
+          <div class="form-group ">
+            
+            <label for="img">Image*</label>
+            <input id="img" type="file" class="form-control-file " aria-label="image" required>
+            <small id="imgCaption" class="text-danger"></small>
+            
+
+          </div>
+  
+          
+          <input  id="submitBlog" class="btn btn-primary" onclick="validateBlogData()" type="button" value="Submit">
+
+        </form>
+
+        <div class="col-md-6 d-none d-sm-none d-md-block">
+
+          <img src="./assets/img/google-forms.png" alt="">
+        </div>
+        
+         
+         
+        
+
+            
+             
+        </div>
+      </div>
+   
+      
+     
+  </header>
+      
+</div>
+<!-- Footer -->
+<footer class="page-footer font-small bg-dark text-light mt-3  ">
+
+
+  <div class="footer-copyright text-center py-3">Made by
+    <a href="https://www.linkedin.com/in/abdulazizalsaif1/"> Abdulaziz</a>
+  </div>
+  
+
+</footer>
+<!-- Footer -->
+
+
+
+
+ 
+  <script src="/js/addBlog.js"></script>
+</body>
+</html>
